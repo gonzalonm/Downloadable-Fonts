@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Downloadable Fonts Demo</string>
+    <string name="title">Downloadable Fonts Demo</string>
+    <string name="apply_local_font">Apply Local Font</string>
+    <string name="applied_font">Applied font</string>
+    <string name="font_not_applied">Font could not be applied</string>
+</resources>
