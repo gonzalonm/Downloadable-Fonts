@@ -1,7 +1,6 @@
 package com.lalosoft.downloadablefontsdemo.font;
 
 import android.graphics.Typeface;
-import android.os.Handler;
 import android.widget.TextView;
 
 import java.util.ArrayList;
