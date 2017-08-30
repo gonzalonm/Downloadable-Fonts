@@ -4,4 +4,5 @@
     <string name="apply_local_font">Apply Local Font</string>
     <string name="applied_font">Applied font</string>
     <string name="font_not_applied">Font could not be applied</string>
+    <string name="apply_remote_font">Apply Remote Font</string>
 </resources>
