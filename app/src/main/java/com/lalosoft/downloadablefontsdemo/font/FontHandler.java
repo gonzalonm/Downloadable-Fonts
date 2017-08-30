@@ -28,21 +28,16 @@ public class FontHandler {
     }
 
     public void applyFont(final FontHandlerCallback callback) {
-        new Handler().post(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    for (FontItem item : fontItemList) {
-                        Typeface typeface = provider.getTypeface(item.textView.getContext(),
-                                getStyleName(item.fontStyle));
-                        item.textView.setTypeface(typeface);
-                    }
-                    callback.onFontApplySuccess();
-                } catch (Exception e) {
-                    callback.onFontApplyError(e);
-                }
+        try {
+            for (FontItem item : fontItemList) {
+                Typeface typeface = provider.getTypeface(item.textView.getContext(),
+                        getStyleName(item.fontStyle));
+                item.textView.setTypeface(typeface);
             }
-        });
+            callback.onFontApplySuccess();
+        } catch (Exception e) {
+            callback.onFontApplyError(e);
+        }
     }
 
     private String getStyleName(FontStyle fontStyle) {
